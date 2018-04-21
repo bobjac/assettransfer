@@ -1,6 +1,6 @@
 pragma solidity ^0.4.10;
 
-contract Bag{
+contract Bag {
     string Number;
     string Pnr;
     address User;
@@ -9,11 +9,11 @@ contract Bag{
  
     AssetState State;
  
-    function Bag() {}
+    function Bag() public {}
 
-    function upload(address user, string number,string pnr) {
+    function upload(address user, string number, string pnr) public {
         User = user;
         Number = number;
         Pnr = pnr;
     }
- }
+}
