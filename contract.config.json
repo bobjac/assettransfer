@@ -1,0 +1,45 @@
+{
+    "Bag": {
+        "Properties": {
+            "Number": {
+                "Type": "string"
+            },
+            "Pnr": {
+                "Type": "string"
+            },
+            "State": {
+                "Type": "state"
+            },
+            "User": {
+                "Type": "user"
+            }
+        },
+        "Constructor": {
+        },
+        "Actions": {
+            "upload": {
+                "Parameters": {
+                    "user": {
+                        "Type": "user"
+                    },
+                    "number": {
+                        "Type": "string"
+                    },
+                    "pnr": {
+                        "Type": "string"
+                    }
+                }
+            }
+        },
+        "Chains": {
+            "Ethereum": {
+                "Type": "Ethereum",
+                "Version": "1.0",
+                "Location": "contract.sol",
+                "TypeName": "Bag",
+                "ActionOverrides": {},
+                "PropertyOverrides": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "Contracts": {
+        "Bag": {
+            "InitiatingRoles": [
+                "Admin"
+            ],
+            "Personas": {
+                "Owner": {
+                    "Role": "Admin",
+                    "IsInitiator": true,
+                    "PropertyMapping": "User"
+                }
+            },
+            "StateProperty": "State",
+            "StateMapping": {
+                "Complete": 0
+            },
+            "States": {
+                "Complete": {
+                    "PercentComplete": 100,
+                    "Style": "Success"
+                }
+            },
+            "Properties": {
+                "Owner": {
+                    "DisplayName": "Admin",
+                    "Description": "Admin Description"
+                }
+            },
+            "Constructor": {
+            },
+            "Actions": {
+                "upload": {
+                    "DisplayName": "Upload Bag"
+                }
+            }
+        }
+    }
+}
